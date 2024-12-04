@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Voucher Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .vouchers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .voucher {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .voucher h2 {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .voucher .password {
+            border: 2px solid #000;
+            margin: 5px 0;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .voucher .details {
+            font-size: 12px;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .vouchers {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="header no-print">WiFi Voucher Generator</h1>
+    <div class="vouchers">
+        <!-- Example vouchers -->
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-1</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <div class="voucher">
+            <h2>Ellry Cafe WiFi Voucher</h2>
+            <div class="password">example-password-2</div>
+            <div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>
+        </div>
+        <!-- Add more vouchers dynamically -->
+    </div>
+</div>
+</body>
+</html>
