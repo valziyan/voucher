@@ -43,6 +43,14 @@
         .voucher .details {
             font-size: 12px;
         }
+        .voucher .quote {
+            font-family: "Georgia", serif;
+            font-size: 10px;
+            font-weight: bold;
+            font-style: italic;
+            border-top: 1px solid;
+            color: #555;
+        }
         @media print {
             .no-print {
                 display: none;
@@ -68,14 +76,20 @@
             $fileTmpPath = $_FILES['csv_file']['tmp_name'];
             $csvData = array_map('str_getcsv', file($fileTmpPath));
 
+            // Read quotes from the file
+            $quotesFilePath = 'quotes.txt'; // Ensure this file exists and is readable
+            $inspirationalQuotes = file($quotesFilePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
             echo '<div class="vouchers">';
 
             foreach ($csvData as $index => $row) {
                 if (isset($row[0])) {
+                    $randomQuote = $inspirationalQuotes[array_rand($inspirationalQuotes)];
                     echo '<div class="voucher">';
                     echo '<h2>Ellry Cafe WiFi Voucher</h2>';
                     echo '<div class="password">' . htmlspecialchars($row[0]) . '</div>';
-                    echo '<div class="details">WiFi: Ellry Cafe<br>Pass: Ellrycafe<br>Free 3 hours</div>';
+                    echo '<div class="details">WiFi: Ellry Cafe / Pass: Ellrycafe<br>Free 3 hours</div>';
+                    echo '<div class="quote">"' . htmlspecialchars($randomQuote) . '"</div>';
                     echo '</div>';
                 }
             }
